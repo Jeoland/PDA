@@ -1,2 +1,5 @@
-# PDA
-A Progressive Domain Adaptive Framework for Depression Symptom Triplets Extraction
+## A Progressive Domain Adaptive (PDA) Framework for Depression Symptom Triplets Extraction
+### Abstract
+Depression is a complex mental disorder, and early accurate identification is critical for intervention and treatment. Existing depression detection methods primarily focus on coarse-grained sentiment classification, which fails to precisely capture specific symptoms and their relationships, limiting fine-grained understanding of depressive emotions. Motivated by Aspect Sentiment Quadruples Prediction (ASQP), we find that this task is highly correlated with depressive symptoms at the level of language modeling. Therefore, to better adapt to our study, we simplify the sentiment quadruple by retaining only category, opinion, and sentiment polarity (COS). Meanwhile, we propose a progressive domain adaptation model to effectively transfer from COS to the depressive symptom triplet extraction task. Specifically, the first stage employs multi-teacher knowledge distillation to learn generalizable triplet extraction ability in multiple source domains; the second stage conducts contrastive learning with cross-domain positive and negative samples to align features across domains; the third stage performs rapid fine-tuning in the target domain to adapt target-specific tasks. Experimental results on Twitter and Reddit depression datasets demonstrate that our method achieves superior effectiveness in depression symptom extraction.
+
+### Overview of PDA Framework
